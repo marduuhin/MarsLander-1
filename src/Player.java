@@ -448,7 +448,7 @@ class Surface {
             if (i > 0 && mainPointsY[i] < mainPointsY[i - 1]) {
                 y = mainPointsY[i - 1];
             }
-            double alpha = Math.atan2(y, x); //nurga arvutamiseks
+            double alpha = Math.atan2(x, y); //nurga arvutamiseks
 
             if (i > 0 && mainPointsY[i] == mainPointsY[i - 1] || x == 0) {
                 alpha = 0;
